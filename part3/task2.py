@@ -11,17 +11,17 @@ s = '''Было просто пасмурно, дуло с севера
 Ты хотела плыть как все - так плыви!'''
 
 
-def decompose(str):
+def decompose(a):
     print('Разбиваем строку на список. Разделяем строку посимвольно, игорируя пробелы')
-    string = list(str.split(' '))
+    str = list(a.split(' '))
     print('Создаем пустую переменную список')
     str1 = []
     print('Создаем переменную, где хранятся специальные символы ? ! - , .')
     str2 = ['\n', '.', ',', '!', '?', '-']
     print('Запускаем цикл. Перебор строки. Если длинна символов менее 5 (до ближайшего пробела) и строка не содержит специальный символ, добовляем его в переменную')
-    for i in range(len(string)):
-        if (len(string[i]) < 5) and (string[i] not in str2):
-            str1.append(string[i])
+    for i in range(len(str)):
+        if (len(str[i]) < 5) and (str[i] not in str2):
+            str1.append(str[i])
     print(str1)
 
 
