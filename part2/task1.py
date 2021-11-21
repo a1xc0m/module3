@@ -1,8 +1,8 @@
-l = [1, 2, 3, 'e', 'a', 3, 13, 77, 'qwerty']
-a = []
+a = [1, 2, 3, 'e', 'a', 3, 13, 77, 'qwerty']
+b = []
 
-for x in range(len(l)):
-    if l[x] not in a:
-        a.append(l[x])
+for i in range(len(a)):
+    if a[i] not in b:
+        b.append(a[i])
         
-print(a)
+print(b)
